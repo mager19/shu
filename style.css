@@ -11,3 +11,7 @@ Tags: white, one-column, responsive layout
 Theme domain: Shu blog
 */
 
+h1{
+	border:1px solid #ccc;
+	padding: 0.5em;
+}

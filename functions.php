@@ -7,6 +7,7 @@ add_theme_support( 'post-thumbnails' );
  * Enqueue scripts and styles.
  */
 function shu_scripts() {
+	wp_enqueue_style( 'reset', get_template_directory_uri() . '/css/reset.css', array( ), false, 'all' );
 	wp_enqueue_style( 'shu-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array( ), false, 'all' );
 	wp_enqueue_script('jquery');
