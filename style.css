@@ -11,7 +11,123 @@ Tags: white, one-column, responsive layout
 Theme domain: Shu blog
 */
 
-h1{
-	border:1px solid #ccc;
-	padding: 0.5em;
+header{
+	background-color: #fff;
+	border-bottom: 3px solid #f7f7f7;
+}
+
+header h1{
+	color:#566270;
+	font-family: 'Oxygen'!important;
+	font-size: 4em;
+	
+}
+
+header .navbar-default {
+    background-color: transparent!important;
+    border: none!important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #fff!important;
+    color:#2b90d9!important;
+    font-weight: 600;
+}
+
+.header__nav{
+	margin-top: 2em;
+}
+
+#menu-menu-1 li{
+	margin-right: 2em;
+}
+
+#menu-menu-1 li a{
+	border-bottom:2px solid #fff;
+	color:#566270;
+	font-size: 1.3em;
+	font-family: 'Raleway'!important;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+#menu-menu-1 li a:hover{
+	border-bottom:2px solid #2b90d9;
+}
+
+.categorias__item h3{
+	font-family: 'Raleway'!important;
+}
+
+
+/* Cabecera*/
+
+#cabecera{
+	font-family: 'Raleway'!important;
+	padding: 2em 0;	
+	text-align: center;
+}
+
+#cabecera img{
+	border:2px solid #566270;
+	border-radius: 50%;
+	text-align: center!important;
+}
+
+#cabecera h2{
+	color:#566270;
+}
+
+#cabecera h3{
+	color:#2b90d9;
+	margin-top: -0.1em;
+}
+
+#cabecera h4{
+	color:#566270;
+	margin-top: -0.1em;
+}
+
+#cabecera ul li{
+	display: inline-block;
+	margin-right: 1em;
+}
+
+/*******************Media queries ****************/
+
+
+@media screen and (max-width:768px) {
+	
+	header h1 {
+       font-size: 3em;
+	}
+
+	.header__nav{
+		margin-top: -4em;
+		text-align: center!important;
+	}
+
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    	border-color: #fff!important;
+	}
+
+	#menu-menu-1 li {
+    	margin-right: 0em;
+	}
+
+	#cabecera h2{
+		font-size: 1.5em;
+	}
+
+	#cabecera h3{
+		font-size: 1.3em;
+	}
+
+	#cabecera h4{
+		font-size: 1.1em;
+	}
+
 }
