@@ -1,6 +1,10 @@
 <?php
 	
-add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-thumbnails' ); 
+add_image_size( 'custom-size', 1280, 450, true );
+add_image_size( 'category-size', 600, 200, true );
+add_image_size('related', 350, 200, true);
+
 	
 // Register custom navigation walker
     require_once('wp_bootstrap_navwalker.php');
@@ -18,52 +22,6 @@ function shu_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'shu_scripts' );
-
-
-// add_action( 'wp_enqueue_scripts', 'fuente_d_google' );
-// function fuente_d_google() {
-//     wp_enqueue_style( $handle = 'fuente_d_google', $src = 'https://fonts.googleapis.com/css?family=Oxygen', $deps = array(), $ver = null, $media = null );
-// }
-
-
-
-// function wp1030_registar_widgets_areas() {
-	
-	
-// 	register_sidebar(array(
-// 		'name' => 'Zona izquierda de widgets',
-// 		'id' => 'sidebar_izq',
-// 		'before_widget' => '<div id="%1$s" class="widget">',
-// 		'after_widget' => '</div>',
-// 		'before_title' => '<h3>',
-// 		'after_title' => '</h3>'
-// 	));
-	
-// 	register_sidebar(array(
-// 		'name' => 'Zona central de widgets',
-// 		'id' => 'sidebar_cen',
-// 		'before_widget' => '<div id="%1$s" class="widget">',
-// 		'after_widget' => '</div>',
-// 		'before_title' => '<h3>',
-// 		'after_title' => '</h3>'
-// 	));
-	
-// 	register_sidebar(array(
-// 		'name' => 'Zona derecha de widgets',
-// 		'id' => 'sidebar_der',
-// 		'before_widget' => '<div id="%1$s" class="widget">',
-// 		'after_widget' => '</div>',
-// 		'before_title' => '<h3>',
-// 		'after_title' => '</h3>'
-// 	));
-	
-	
-// }
-// add_action('widgets_init', 'wp1030_registar_widgets_areas');
-
-
-
-
 
 function wp1030_registrar_menus() {
 	
@@ -132,15 +90,3 @@ function Acerca_de_mi() {
 }
 add_action( 'init', 'Acerca_de_mi', 0 );
 
-
-add_filter('user_contactmethods','metodos_de_contacto');
-function metodos_de_contacto( $contactmethods ) {
-
-    $contactmethods['twitter'] = __('Twitter', 'textdomain');
-    $contactmethods['facebook'] = __('Facebook', 'textdomain');
-    $contactmethods['instagram'] = __('Instagram', 'textdomain');
-    $contactmethods['linkedin'] = __('Linkedin', 'textdomain');
-
-    return $contactmethods;
-
-}

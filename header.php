@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta name="viewport" content="width=device-width,  minimum-scale=1,  maximum-scale=1">
 	<title><?php wp_title('&raquo;', true, 'right'); ?><?php bloginfo('name'); ?></title>
 	
 	<?php wp_head(); ?>
@@ -13,11 +14,11 @@
 <header>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-3 col-md-4">
-				<h1><?php bloginfo('name'); ?></h1>
+			<div class="col-xs-12 col-md-3">
+				<a href="<?php echo get_option('home'); ?>"><h1><?php bloginfo('name'); ?></h1></a>
 			</div>
 
-			<div class="col-xs-12 col-md-8">
+			<div class="col-xs-10 col-xs-offset-1 col-md-8">
 				<div class="header__nav">
 					
 					<nav class="navbar navbar-default">
