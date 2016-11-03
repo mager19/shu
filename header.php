@@ -15,7 +15,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-3">
-				<a href="<?php echo get_option('home'); ?>"><h1><?php bloginfo('name'); ?></h1></a>
+				<a href="<?php echo home_url(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
 			</div>
 
 			<div class="col-xs-10 col-xs-offset-1 col-md-8">

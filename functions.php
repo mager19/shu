@@ -1,10 +1,14 @@
 <?php
 	
+//Soporte de imagenes
+
 add_theme_support( 'post-thumbnails' ); 
 add_image_size( 'custom-size', 1280, 450, true );
 add_image_size( 'category-size', 600, 200, true );
 add_image_size('related', 350, 200, true);
 
+//Añade el archivo que trae las opciones de administracion
+	require get_template_directory() . '/inc/function-admin.php';
 	
 // Register custom navigation walker
     require_once('wp_bootstrap_navwalker.php');

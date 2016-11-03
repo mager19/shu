@@ -17,6 +17,7 @@ get_header(); ?>
 						<?php the_post_thumbnail(array(150, 150)); ?>
 						<h2>Hola, Soy <strong><?php the_title(); ?></strong></h2>
 						<h3><?php the_field('profesion'); ?></h3>
+						<h4><?php echo $first_name = esc_attr( get_option('first_name') ) . $twitter_handler = esc_attr( get_option('twitter_handler') ); ?></h4>
 						
 						<?php 
 							//Variables para traer los campos de las redes sociales.
