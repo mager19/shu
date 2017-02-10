@@ -10,6 +10,7 @@ get_header();
 			 	<!-- post -->
 			 			<?php the_post_thumbnail($size = 'custom-size') ?>
 			 		<div class="articulo__contenido__cabecera">
+			 			<h3>Este contenido es patrocinado por:</h3>
 			 			<h2><?php the_title(); ?></h2>
 			 			<h3><?php the_date(); ?></h3>
 			 			<h4><?php the_category(' , ' ); ?></h4>
